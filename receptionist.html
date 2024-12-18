@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptionist</title>
+    <link rel="stylesheet" href="css/receptionist.css">
+</head>
+<body>
+    <header>
+        <h1>Receptionist</h1>
+        <button onclick="logOut()">Logout</button>
+    </header>
+
+    <main>
+        <h2>Manage Appointments</h2>
+        <form id="add-appointment-form">
+            <input type="text" id="patient-id" placeholder="Patient ID" required>
+            <input type="datetime-local" id="appointment-time" required>
+            <button type="button" onclick="addAppointment()">Add Appointment</button>
+        </form>
+
+        <h2>Appointment List</h2>
+        <ul id="appointment-list">
+            <!-- Appointments will be loaded here -->
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

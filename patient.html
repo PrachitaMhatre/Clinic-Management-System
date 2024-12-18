@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient</title>
+    <link rel="stylesheet" href="css/patient.css">
+</head>
+<body>
+    <header>
+        <h1>Patient Dashboard</h1>
+        <button onclick="logOut()">Logout</button>
+    </header>
+
+    <main>
+        <h2>Appointment Details</h2>
+        <form id="appointment-details-form">
+            <input type="text" id="appointment-id" placeholder="Appointment ID" required>
+            <button type="button" onclick="getAppointmentDetails()">View Details</button>
+        </form>
+
+        <h2>Appointment History</h2>
+        <ul id="appointment-history">
+            <!-- Appointment history will be loaded here -->
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

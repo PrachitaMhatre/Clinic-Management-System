@@ -1,0 +1,159 @@
+/* Doctor Dashboard Styles */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header button {
+    background-color: #d4d4d4;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #b1b1b1;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+main h2 {
+    color: #3b5998;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+form label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+form button {
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #2a4373;
+}
+
+#patient-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#patient-list li {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#patient-list li:last-child {
+    border-bottom: none;
+}
+
+.patient-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.patient-actions button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.patient-actions button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        margin-bottom: 5px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+    }
+}
